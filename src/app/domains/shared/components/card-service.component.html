@@ -1,0 +1,10 @@
+<article class="grid grid-cols-4">
+  @for (item of servicesPortfolio; track $index) {
+  <section class="flex justify-center items-center h-64 {{ item.colorCard }}">
+    <h2
+      class="font-poppins font-medium text-2xl text-center {{ item.colorTitle }}"
+      [innerHTML]="item.title"
+    ></h2>
+  </section>
+  }
+</article>
